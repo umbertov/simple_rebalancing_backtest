@@ -1,6 +1,6 @@
 TIMEFRAME=4h
 
-for symbol in DOT FTM AVAX SOL ATOM BNB FTT; do
+for symbol in BTC ETH ALGO XMR DOT FTM AVAX SOL ATOM BNB FTT; do
     echo downloading $symbol data...
     python ccxt_downloader.py \
         --symbol $symbol/USDT \

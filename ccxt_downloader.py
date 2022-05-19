@@ -103,7 +103,7 @@ def download_symbol(
     start_date,
     end_date,
     timeframe="5m",
-    destdir=".",
+    destdir: Path = Path("."),
     limit=5000,
     save=False,
 ) -> SymbolData:
